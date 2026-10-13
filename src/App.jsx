@@ -16,7 +16,9 @@ const projects = [
     features: ["Service presentation", "Event gallery", "Contact section"],
     stack: ["HTML", "CSS", "JavaScript"],
     url: "https://crazy-event.in/",
-    image: "/images/crazy-event.png",
+    
+image: `${import.meta.env.BASE_URL}images/crazy-event.png`,
+
     theme: "event",
     monogram: "CE",
     previewLabel: "EVENTS & CELEBRATIONS",
@@ -31,7 +33,7 @@ const projects = [
     role: "Website development",
     features: ["Food-court sections", "Menu presentation", "Mobile-friendly layout"],
     stack: ["HTML", "CSS", "JavaScript"],
-    image: "/images/jadhav-foodcourt.png",
+    image: `${import.meta.env.BASE_URL}images/jadhav-foodcourt.png`,
     theme: "food",
     monogram: "JF",
     previewLabel: "GOOD FOOD, GOOD MOOD",
@@ -47,7 +49,7 @@ const projects = [
     features: ["Program information", "Faculty & gallery", "Enquiry section"],
     stack: ["HTML", "CSS", "JavaScript"],
     url: "https://pooja-bot07.github.io/coaching-website/",
-    image: "/images/saraswati-classes.png",
+    image: `${import.meta.env.BASE_URL}images/saraswati-classes.png`,
     theme: "education",
     monogram: "SC",
     previewLabel: "LEARN · GROW · EXCEL",
@@ -137,16 +139,16 @@ function ServiceIcon({ name }) {
 
 
 function Services() {
-  const serviceImages = [
-    "/images/services/website.jpg",
-    "/images/services/design.jpg",
-    "/images/services/business.jpg",
-    "/images/services/ecommerce.jpg",
-    "/images/services/seo.jpg",
-    "/images/services/admin.jpg",
-    "/images/services/google-profile.jpg",
-    "/images/services/maintenance.jpg",
-  ];
+const serviceImages = [
+  `${import.meta.env.BASE_URL}images/services/website.jpg`,
+  `${import.meta.env.BASE_URL}images/services/design.jpg`,
+  `${import.meta.env.BASE_URL}images/services/business.jpg`,
+  `${import.meta.env.BASE_URL}images/services/ecommerce.jpg`,
+  `${import.meta.env.BASE_URL}images/services/seo.jpg`,
+  `${import.meta.env.BASE_URL}images/services/admin.jpg`,
+  `${import.meta.env.BASE_URL}images/services/google-profile.jpg`,
+  `${import.meta.env.BASE_URL}images/services/maintenance.jpg`,
+];
 
   return (
     <section className="services-section" id="services">
@@ -500,7 +502,7 @@ function Testimonials() {
           <div className="testimonial-author">
             <img
   className="testimonial-avatar"
-  src="/images/testimonials/crazy-event-client.jpg"
+  src={`${import.meta.env.BASE_URL}images/testimonials/crazy-event-client.jpg`}
   alt="Sarthak Supekar, Crazy Event"
   loading="lazy"
 />
@@ -523,7 +525,7 @@ function Testimonials() {
           <div className="testimonial-author">
            <img
   className="testimonial-avatar"
-  src="/images/testimonials/saraswati-classes-client.jpg"
+  src={`${import.meta.env.BASE_URL}images/testimonials/saraswati-classes-client.jpg`}
   alt="Reshma Malusare, Saraswati Abacus and Vedic Classes"
   loading="lazy"
 />
